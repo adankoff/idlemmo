@@ -1,0 +1,25 @@
+<template name="resources">
+
+  <div class="col-xs-12">
+    {{#if resourcesReady}}
+      {{#each resources this}}
+      <div class="col-sm-4">
+        <p>user_id {{user_id}}</p>
+        <p>name {{name}}</p>
+        <p>value {{value}}</p>
+        <p>types {{types}}</p>
+      </div>
+      {{else}}
+        <div class="wrapper-message">
+          <div class="title-message">No tasks here</div>
+          <div class="subtitle-message">Add new tasks using the field above</div>
+        </div>
+      {{/each}}
+    {{else}}
+        <div class="wrapper-message">
+          <div class="title-message">Loading tasks...</div>
+        </div>
+    {{/if}}
+  </div>
+
+</template>

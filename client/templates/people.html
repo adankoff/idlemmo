@@ -1,0 +1,22 @@
+<template name="people">
+
+  <div class="col-xs-12">
+    <h1>People</h1>
+    {{#if peopleReady}}
+      {{#each people this}}
+      <div class="col-sm-4">
+        <p>total {{total}}</p>
+      </div>
+      {{else}}
+        <div class="wrapper-message">
+          <div class="title-message">No people</div>
+        </div>
+      {{/each}}
+    {{else}}
+        <div class="wrapper-message">
+          <div class="title-message">Loading tasks...</div>
+        </div>
+    {{/if}}
+  </div>
+
+</template>
