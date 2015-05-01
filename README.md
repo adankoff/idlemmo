@@ -1,4 +1,5 @@
 # idlemmo
 
 `bower install`
+
 `meteor`
