@@ -1,0 +1,4 @@
+# idlemmo
+
+bower install
+meteor
